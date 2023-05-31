@@ -2,16 +2,97 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
+        task9();
+        task10();
+    }
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    public static void task1() {
+        System.out.println("Задача 1");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+    public static void task2() {
+        System.out.println("Задача 2");
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        for (int i = 0; i <= 17; i += 2) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        for (int i = 10; i >= -10; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        for (int year = 1904; year <= 2096; year += 4) {
+            System.out.println(year + " год являтся високосным");
+        }
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        for (int i = 7; i <= 98; i += 7) {
+            System.out.printf(i + " ");
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        for (int i = 1; i <= 512; i *= 2) {
+            System.out.printf(i + " ");
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int monthlyDeposit = 29000;
+        int totalDeposit = 0;
+        for (int i = 1; i <= 12; i += 1) {
+            totalDeposit = totalDeposit + monthlyDeposit;
+        }
+        System.out.println(totalDeposit);
+
+    }
+
+    public static void task9() {
+        System.out.println("Задача 9");
+        int monthlyDeposit = 29000;
+        int totalDeposit = 0;
+
+        for (int i = 1; i <= 12; i += 1) {
+            totalDeposit = totalDeposit + totalDeposit / 100;
+            System.out.printf(" Месяц %d, сумма накоплений %d рублей", i, totalDeposit);
+            totalDeposit = totalDeposit + monthlyDeposit;
+        }
+    }
+
+    public static void task10() {
+        System.out.println("Задача 10");
+        int constanta = 2;
+        int result;
+        for (int i = 1; i <= 10; i += 1) {
+            result = constanta * i;
+            System.out.println(constanta + "*" + i + "=" + result);
         }
     }
 }
